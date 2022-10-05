@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="banner">
+    <img
+      src="https://www.hyperactive.co.il/static/media/hyperactive_logo.ca677e3d.png"
+      alt="hyper-active-logo"
+    />
+    <small>בית הספר להייטק הטוב בישראל</small>
+  </div>
+  <nav>
+    <ul class="menu" #menu>
+      <li>שירות לציבור</li>
+      <li>שאלות שכנראה תשאלו</li>
+      <li>איך זה עובד</li>
+      <li>קצת עלינו</li>
+      <li>כאן תמצאו את הבוגרים שלנו</li>
+      <li>למה ללמוד אצלנו?</li>
+      <li (click)="showCareers(submenu)">
+        <span class="accordion-triggger" >קריירות</span>
+        <i class="fas fa-sort-down"> </i>
+        <ul id="submenu" #submenu>
+          <li>סייבר ואבטחת מידע</li>
+          <li>ניהול רשתות ומחשוב</li>
+          <li>שיווק דיגיטלי</li>
+          <li>בדיקת תוכנה</li>
+          <li>עיצוב גרפי</li>
+          <li>פיתוח תוכנה</li>
+          <li>פיתוח מערכות משובצות מחשב</li>
+          <li>פיתוח אפליקציות מובייל</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="hamburger" #hamburger (click)="show(hamburger, menu)">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>

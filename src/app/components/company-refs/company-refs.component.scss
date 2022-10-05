@@ -1,0 +1,11 @@
+.container {
+    width: 100%;
+    text-align: center;
+    max-height: 700px;
+    overflow: hidden;
+    .banners {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

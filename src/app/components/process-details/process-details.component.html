@@ -1,0 +1,44 @@
+<div class="center">
+  <h1>איך זה עובד</h1>
+  <div class="container">
+    <div class="box cyan" (click)="show(accordionParagraph1, toggleIcon1)">
+      <h3>
+        {{ processString[1].title }}
+        <i #toggleIcon1>+</i>
+      </h3>
+      <p #accordionParagraph1>
+        {{ processString[1].content }}
+      </p>
+    </div>
+    <div class="box sky" (click)="show(accordionParagraph2, toggleIcon2)">
+      <h3>
+        {{ processString[3].title }}
+        <i #toggleIcon2>+</i>
+      </h3>
+      <p #accordionParagraph2>
+        {{ processString[3].content }}
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="box teal" (click)="show(accordionParagraph3, toggleIcon3)">
+      <h3>
+        {{ processString[0].title }}
+        <i #toggleIcon3>+</i>
+      </h3>
+      <p #accordionParagraph3>
+        {{ processString[0].content }}
+      </p>
+    </div>
+    <div class="box navy" (click)="show(accordionParagraph4, toggleIcon4)">
+      <h3>
+        {{ processString[2].title }}
+        <i #toggleIcon4>+</i>
+      </h3>
+      <p #accordionParagraph4>
+        {{ processString[2].content }}
+      </p>
+    </div>
+  </div>
+</div>

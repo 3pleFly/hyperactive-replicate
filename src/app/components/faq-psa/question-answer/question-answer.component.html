@@ -1,0 +1,16 @@
+<div class="container" (click)="show(answer)">
+  <div class="question">
+    <h4>
+      {{ this.qa.question }}
+      <i
+        class="fa fa-arrow-circle-down"
+        *ngIf="!answer.classList.contains('active')"
+      ></i>
+      <i
+        class="fa fa-arrow-circle-up"
+        *ngIf="answer.classList.contains('active')"
+      ></i>
+    </h4>
+    <p #answer class="answer">{{ this.qa.answer }}</p>
+  </div>
+</div>

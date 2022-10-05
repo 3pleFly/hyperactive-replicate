@@ -1,0 +1,50 @@
+<div class="qa-bg">
+  <h2>שאלות שכנראה תשאלו</h2>
+  <div class="container">
+    <div class="col" *ngIf="this.innerWidth > 925">
+      <app-question-answer
+        *ngFor="let qa of this.qas | slice: 0:this.qas.length / 2"
+        [qa]="qa"
+      >
+      </app-question-answer>
+    </div>
+    <div class="col" *ngIf="this.innerWidth > 925">
+      <app-question-answer
+        *ngFor="let qa of this.qas | slice: this.qas.length / 2:this.qas.length"
+        [qa]="qa"
+      ></app-question-answer>
+    </div>
+    <div class="col" *ngIf="this.innerWidth < 925">
+      <app-question-answer
+        *ngFor="let qa of this.qas | slice: 0:this.qas.length"
+        [qa]="qa"
+      ></app-question-answer>
+    </div>
+  </div>
+</div>
+<div class="psa-bg">
+  <h2>שירות לציבור</h2>
+  <div class="container">
+    <div class="col" *ngIf="this.innerWidth > 925">
+      <app-question-answer
+        *ngFor="let psa of this.psas | slice: 0:this.psas.length / 2"
+        [qa]="psa"
+      >
+      </app-question-answer>
+    </div>
+    <div class="col" *ngIf="this.innerWidth > 925">
+      <app-question-answer
+        *ngFor="
+          let psa of this.psas | slice: this.psas.length / 2:this.psas.length
+        "
+        [qa]="psa"
+      ></app-question-answer>
+    </div>
+    <div class="col" *ngIf="this.innerWidth < 925">
+      <app-question-answer
+        *ngFor="let psa of this.psas | slice: 0:this.psas.length"
+        [qa]="psa"
+      ></app-question-answer>
+    </div>
+  </div>
+</div>

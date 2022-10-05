@@ -1,0 +1,9 @@
+<div class="container">
+  <h3>כאן תמצאו את הבוגרים</h3>
+  <div class="banners">
+    <app-company-banner
+      *ngFor="let banner of this.companyBanners"
+      [banner]="banner"
+    ></app-company-banner>
+  </div>
+</div>

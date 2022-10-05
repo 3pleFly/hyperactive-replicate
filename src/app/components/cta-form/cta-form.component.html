@@ -1,0 +1,47 @@
+<footer>
+  <h3>
+    צרו קשר לכל שאלה או לקביעת פגישת ייעוץ (מלאו פרטיכם ונחזור אליכם בהקדם)
+  </h3>
+
+  <form [formGroup]="ctaForm" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+      <input
+        type="text"
+        formControlName="fullName"
+        [placeholder]="
+          fullName?.invalid && fullName?.touched ? 'שם מלא חובה' : ''
+        "
+      />
+      <label>שם מלא</label>
+    </div>
+    <div class="form-control">
+      <input
+        type="number"
+        formControlName="phoneNumber"
+        [placeholder]="
+          phoneNumber?.invalid && phoneNumber?.touched ? 'מספר טלפון חובה' : ''
+        "
+      />
+      <label> טלפון </label>
+    </div>
+    <div class="form-control">
+      <input
+        type="email"
+        formControlName="email"
+        [placeholder]="
+          email?.invalid && email?.touched ? 'אימייל תקני חובה' : ''
+        "
+      />
+      <label>אימייל</label>
+    </div>
+    <button type="submit">!דברו איתי</button>
+  </form>
+  <div class="checkbox">
+    <input type="checkbox" />
+    <label for="scales"
+      >.אני מאשר קבלת עדכונים ומבצעים מהייפראקטיב בכפוף לתקנון
+    </label>
+  </div>
+  <a class="external-link" href="">מדיניות פרטיות משתמשים</a>
+  <a class="external-link" href="">הצהרת נגישות</a>
+</footer>
