@@ -1,7 +1,8 @@
 .banner {
+  cursor: pointer;
   position: relative;
   img {
-    width: 200px;
+    height: 75px;
   }
   small {
     position: absolute;
@@ -36,10 +37,9 @@ nav {
       position: relative;
       float: left;
       display: block;
-      padding: 15px;
+      padding: 2px;
       cursor: pointer;
-      font-size: 0.8rem;
-      font-weight: 700;
+      font-size: 0.6rem;
       span {
         margin-left: 5px;
       }
@@ -84,7 +84,7 @@ nav {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 925px) {
   .hamburger {
     display: block;
     margin-left: 20px;
@@ -108,10 +108,6 @@ nav {
     display: block;
     position: initial;
   }
-
-  nav {
-  }
-
   .banner {
     img {
       width: unset;

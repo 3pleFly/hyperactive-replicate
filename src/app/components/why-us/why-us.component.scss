@@ -1,0 +1,61 @@
+.container {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAP1AQMAAAAEpdAkAAAABlBMVEXt8vXp8PMayv0PAAADk0lEQVR42u3UMQHAIAADsH77UICQyZoHlOEEKVjY2SMRkaxyecpllMssl7dcvnI55bLLxYMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9OA/FyeQ9QbLaxohAAAAAElFTkSuQmCC");
+  direction: rtl;
+
+  h1 {
+    padding-top: 30px;
+    text-align: center;
+    margin: 0;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+
+  .content {
+    padding: 50px 15px 60px 0;
+    width: 100%;
+  }
+
+  strong {
+    font-size: 0.8rem;
+  }
+
+  .col {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  ol {
+    li {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 925px) {
+  .container {
+    direction: rtl;
+    box-shadow: 10px 50px 100px #000;
+
+    .col-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .col {
+      width: 50%;
+      max-width: 550px;
+      margin: 10px;
+      padding: 10px;
+      transition: all 0.5s linear;
+    }
+    .col:hover {
+      scale: 1.1;
+      box-shadow: 10px 10px 50px #000;
+    }
+  }
+}

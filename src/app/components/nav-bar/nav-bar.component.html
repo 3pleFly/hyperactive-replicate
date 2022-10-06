@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="banner">
+  <div class="banner" (click)="toHome()">
     <img
       src="https://www.hyperactive.co.il/static/media/hyperactive_logo.ca677e3d.png"
       alt="hyper-active-logo"
@@ -8,12 +8,12 @@
   </div>
   <nav>
     <ul class="menu" #menu>
-      <li>שירות לציבור</li>
-      <li>שאלות שכנראה תשאלו</li>
-      <li>איך זה עובד</li>
-      <li>קצת עלינו</li>
-      <li>כאן תמצאו את הבוגרים שלנו</li>
-      <li>למה ללמוד אצלנו?</li>
+      <li (click)="toPsa()">| שירות לציבור</li>
+      <li (click)="toFaq()">| שאלות שכנראה תשאלו</li>
+      <li (click)="toProcessDetails()">| איך זה עובד</li>
+      <li (click)="toAboutUs()">| קצת עלינו</li>
+      <li (click)="toCompanyRefs()">| כאן תמצאו את הבוגרים שלנו</li>
+      <li (click)="toWhyUs()">| למה ללמוד אצלנו?</li>
       <li (click)="showCareers(submenu)">
         <span class="accordion-triggger" >קריירות</span>
         <i class="fas fa-sort-down"> </i>

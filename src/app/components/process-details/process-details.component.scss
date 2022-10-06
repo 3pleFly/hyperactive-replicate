@@ -73,6 +73,8 @@ i {
       font-size: 1rem;
       position: relative;
       i {
+        text-shadow: none;
+        font-style: normal;
         color: #000;
         font-size: 2rem;
         font-weight: lighter;
@@ -80,7 +82,7 @@ i {
         left: 10px;
         bottom: -13px;
         display: block;
-        transition: 0.3s ease-in;
+        transition: 0.5s linear;
       }
     }
 

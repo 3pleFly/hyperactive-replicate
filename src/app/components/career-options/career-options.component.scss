@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+app-cta-form {
+  width: 400px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  text-align: center;
+}
+
+.careers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.4em;
+}
+
+@media only screen and (max-width: 925px) {
+  app-cta-form {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .content {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .careers {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  app-cta-form {
+    width: 100%;
+    border: 1px solid hsla(0,0%,80%,.5);
+  }
+}

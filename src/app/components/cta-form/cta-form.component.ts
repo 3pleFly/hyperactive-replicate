@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -8,17 +8,24 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class CtaFormComponent implements OnInit {
   ctaForm!: FormGroup;
+  innerWidth!: number;
+  @Input() full: boolean = true;
+  @Input() title: string = 'צרו קשר לכל שאלה או לקביעת פגישת ייעוץ (מלאו פרטיכם ונחזור אליכם בהקדם)'
 
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.innerWidth = window.innerWidth;
+  }
   constructor(private fbuilder: FormBuilder) {}
 
+
   ngOnInit(): void {
-    this.ctaForm = this.fbuilder.group(
-      {
-        fullName: ['', Validators.required],
-        phoneNumber: ['', Validators.required],
-        email: ['', [Validators.required, Validators.email]],
-      }
-    );
+    this.innerWidth = window.innerWidth;
+    this.ctaForm = this.fbuilder.group({
+      fullName: ['', Validators.required],
+      phoneNumber: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+    });
   }
 
   onSubmit(): void {

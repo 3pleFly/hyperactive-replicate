@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { QuestionAnswerComponent } from './components/faq-psa/question-answer/question-answer.component';
 import { CompanyBannerComponent } from './components/company-refs/company-banner/company-banner.component';
 import { BigBannerComponent } from './components/big-banner/big-banner.component';
+import { CareerComponent } from './components/career-options/career/career.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { BigBannerComponent } from './components/big-banner/big-banner.component
     CtaFormComponent,
     QuestionAnswerComponent,
     CompanyBannerComponent,
-    BigBannerComponent
+    BigBannerComponent,
+    CareerComponent
   ],
   imports: [
     BrowserModule, FontAwesomeModule, ReactiveFormsModule

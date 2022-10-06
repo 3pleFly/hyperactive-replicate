@@ -1,6 +1,6 @@
-<footer>
+<footer [ngClass]="{ 'full-footer': this.innerWidth > 925 && this.full === true}">
   <h3>
-    צרו קשר לכל שאלה או לקביעת פגישת ייעוץ (מלאו פרטיכם ונחזור אליכם בהקדם)
+    {{title}}
   </h3>
 
   <form [formGroup]="ctaForm" (ngSubmit)="onSubmit()">
@@ -11,8 +11,8 @@
         [placeholder]="
           fullName?.invalid && fullName?.touched ? 'שם מלא חובה' : ''
         "
-      />
-      <label>שם מלא</label>
+        />
+        <label>שם מלא</label>
     </div>
     <div class="form-control">
       <input
@@ -37,10 +37,10 @@
     <button type="submit">!דברו איתי</button>
   </form>
   <div class="checkbox">
-    <input type="checkbox" />
-    <label for="scales"
-      >.אני מאשר קבלת עדכונים ומבצעים מהייפראקטיב בכפוף לתקנון
-    </label>
+    <label class="bold" for="scales"
+    >.אני מאשר קבלת עדכונים ומבצעים מהייפראקטיב בכפוף לתקנון
+  </label>
+  <input type="checkbox" />
   </div>
   <a class="external-link" href="">מדיניות פרטיות משתמשים</a>
   <a class="external-link" href="">הצהרת נגישות</a>
