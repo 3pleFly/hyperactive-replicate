@@ -1,11 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@800&display=swap");
+
 * {
   box-sizing: border-box;
   font-family: "Assistant", sans-serif;
 }
 
+html {
+  font-size: 1.4rem;
+}
+
 body {
   margin: 0;
   padding: 0;
+  // padding-top: 100px;
+}
+body::before {
+  display: block;
+  content: "";
+  height: 100px; /* or whatever */
 }
 
 a {
@@ -26,14 +39,19 @@ input[type="number"] {
 li {
   list-style: none;
 }
-@media only screen and (min-width: 1300px) {
-  html {
-    font-size: 1.2rem;
-  }
-}
+// @media only screen and (min-width: 1300px) {
+//   html {
+//     font-size: 1.4rem;
+//   }
+// }
 
-@media only screen and (min-width: 1800px) {
-  html {
-    font-size: 1.6rem;
+// @media only screen and (min-width: 1800px) {
+//   html {
+//   }
+// }
+
+@media only screen and (max-width: 1400px) {
+  body::before {
+    display: none;
   }
 }

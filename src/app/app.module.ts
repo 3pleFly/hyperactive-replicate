@@ -16,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReactiveFormsModule } from '@angular/forms';
 import { QuestionAnswerComponent } from './components/faq-psa/question-answer/question-answer.component';
 import { CompanyBannerComponent } from './components/company-refs/company-banner/company-banner.component';
+import { BigBannerComponent } from './components/big-banner/big-banner.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { CompanyBannerComponent } from './components/company-refs/company-banner
     FaqpsaComponent,
     CtaFormComponent,
     QuestionAnswerComponent,
-    CompanyBannerComponent
+    CompanyBannerComponent,
+    BigBannerComponent
   ],
   imports: [
     BrowserModule, FontAwesomeModule, ReactiveFormsModule

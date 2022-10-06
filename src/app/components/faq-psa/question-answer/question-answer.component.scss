@@ -1,12 +1,12 @@
 .container {
   color: #007cba;
   direction: rtl;
+  font-size: 0.7rem;
   h4 {
     cursor: pointer;
     position: relative;
     padding-left: 20px;
     margin: 0;
-    font-size: 0.9rem;
     i {
       position: absolute;
       left: 0;
@@ -24,7 +24,6 @@
     position: relative;
     bottom: -1px;
     line-height: 1.6;
-    font-size: 0.7rem;
   }
   .active {
     padding: 10px 0;

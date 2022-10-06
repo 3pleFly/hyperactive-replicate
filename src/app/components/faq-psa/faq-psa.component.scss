@@ -6,14 +6,15 @@ h2 {
 
 .container {
   display: flex;
-  justify-content: space-evenly; 
+  justify-content: center; 
   padding-bottom: 20px;
 }
 
 .col {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
+  margin: 20px;
 }
 
 .qa-bg {
